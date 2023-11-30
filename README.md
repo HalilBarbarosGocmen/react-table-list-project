@@ -1,25 +1,44 @@
-Proje Dökümantasyonu:
 
-Bu dökümantasyon, Vite kullanılarak React ve Tailwind CSS ile geliştirilen bir projedir. Projeyi anlamak, geliştirmek ve sürdürmek için aşağıdaki bilgileri içermektedir.
+**Project Documentation:**
 
-Projenin Kurulumu -Projeyi klonlayın. -Projenin olduğu dizinde 1- npm i 2- npm run dev yaptığınız zaman proje çalışacaktır.
+This documentation pertains to a project developed using Vite, React, and Tailwind CSS. It contains the following information to understand, develop, and maintain the project.
 
-Proje Genel Bakışı
-1.1 Proje Yapısı Proje, modüler bir yapıda olup ana dizin içerisindeki src klasöründe aşağıdaki alt klasörleri içermektedir:
+**Project Setup**
+- Clone the project.
+- Navigate to the project directory.
+- Run the following commands:
+    1. `npm i`
+    2. `npm run dev`
+    Running these commands will start the project.
 
-1.2 Teknolojiler React: Kullanıcı arayüzü oluşturmak ve bileşenleri yönetmek için kullanılmıştır. Tailwind CSS: Hızlı ve esnek bir şekilde stil oluşturmak için kullanılmıştır. API: Uygulama, dışarıdan bir API'dan ürün bilgilerini çekmektedir.
+**Project Overview**
+- **Project Structure**
+  The project is structured in a modular format, containing the following subfolders within the main `src` folder:
 
-Özellikler
-2.1 Ürün Listeleme ve Filtreleme API'den alınan ürün bilgileri kategori ve fiyat filtrelemeleri ile liste halinde gösterilir. Kullanıcılar ürünleri kategorilere göre filtreleyebilir ve belirli fiyat aralıklarını seçebilir. Arama çubuğu ile hızlı bir şekilde istenilen ürün aranabilir.
+- **Technologies**
+  - React: Used to create the user interface and manage components.
+  - Tailwind CSS: Employed for rapid and flexible styling.
+  - API: The application fetches product information from an external API.
 
-2.2 Sayfalama Sayfalama özelliği ile kullanıcılar büyük ürün listeleri arasında gezinebilir. Her sayfada belirli sayıda ürün gösterilir.
+**Features**
+- **Product Listing and Filtering**
+  Product information fetched from the API is displayed in a list with category and price filtering options. Users can filter products by category, select specific price ranges, and quickly search for desired products using a search bar.
 
-2.3 Ürün Ekleme, Düzenleme ve Silme Kullanıcılar yeni ürün ekleyebilir, mevcut ürünleri düzenleyebilir ve silebilir. Ürün eklenirken veya güncellenirken kullanıcıdan tüm gerekli bilgileri doldurması istenir. Hatalı giriş durumunda kullanıcıya bilgilendirme mesajları gösterilir.
+- **Pagination**
+  Users can navigate through large product lists using pagination, displaying a certain number of products per page.
 
-2.4 Yönlendirme ve Ana Sayfa Seçenekleri Ana sayfada, ürünler ve kullanıcılar arasında geçiş yapmak için iki adet seçenek bulunur. Her seçenek, ilgili sayfaya yönlendirme yapar.
+- **Product Addition, Editing, and Deletion**
+  Users can add new products, edit existing ones, and delete products. When adding or updating a product, users are prompted to fill in all necessary information. Informative messages are displayed in case of input errors.
 
-2.5 Görsel Hata Yönetimi API'den gelen fotoğrafsız ürünler için default "image not found" görseli eklenmiştir. Hatalı durumları kullanıcıya anlatmak için hata mesajları ve bildirimler kullanılmıştır.
+- **Routing and Home Page Options**
+  The home page includes two options for switching between products and users, each directing to the respective page.
 
-2.6 Bilgilendirme Ekranları ve Animasyonlar Ürün eklenme ve güncellenme işlemlerinde başarılı olunca ekranın sağ üstünde bilgilendirme ekranları çıkar. Animasyonlar, kullanıcı deneyimini artırmak için kullanılmıştır.
+- **Visual Error Handling**
+  For products without images fetched from the API, a default "image not found" graphic is included. Error messages and notifications are used to communicate faulty states to users.
 
-Geliştirme ve Sürdürülebilirlik Uygulama, modüler bir yapıda olduğu için yeni özellikler eklemek veya mevcutları güncellemek kolaydır. Stil dosyaları Tailwind CSS ile oluşturulduğu için hızlı ve esnek bir şekilde düzenlenebilir. API servisi, ayrı bir dosyada bulunduğu için API değişikliklerine karşı dayanıklıdır.
+- **Information Screens and Animations**
+  Information screens appear at the top right of the screen upon successful product addition or update. Animations are utilized to enhance the user experience.
+
+**Development and Sustainability**
+The application's modular structure facilitates easy addition of new features or updates to existing ones. The style files are created with Tailwind CSS, enabling quick and flexible modifications. The API service, located in a separate file, ensures resilience against API changes.
+
